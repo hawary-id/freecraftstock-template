@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonton</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+    </style>
+
+    <script src="assets/script/tailwind-config.js"></script>
+
+    <style type="text/tailwindcss">
+        .flex::before, .flex::after { display: none !important; } @layer components { .nav-link { @apply text-sm font-semibold; } .nav-link.active { @apply text-slate-700 font-semibold; } .nav-link:hover { @apply text-slate-700; } .card-detail-top { @apply absolute
+        top-0 h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300; } .card-detail-bottom { @apply absolute bottom-0 h-24 left-0 right-0
+        bg-gradient-to-t from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300; } }
+    </style>
+</head>
+
+<body class="font-poppins bg-slate-100">
+    <!-- START: Navbar -->
+    <aside class="flex w-full px-4 md:px-32 py-2 md:py-0 justify-between md:justify-start items-center bg-slate-50 text-gray-400 rounded-b-md md:rounded-none shadow">
+        <a href="" class="text-2xl bi bi-list md:hidden"></a>
+        <a href="index.html" class="hidden md:flex text-2xl text-slate-500 font-semibold mr-2">
+            <span class="text-2xl bi bi-house"></span>
+            <span class="ml-2">Freecraftstock</span>
+        </a>
+        <ul class="hidden md:flex gap-5 ml-10">
+            <li class="nav-link py-4">
+                <a href="vectors.html">Vectors</a>
+            </li>
+            <li class="nav-link py-4">
+                <a href="photos.html">Photos</a>
+            </li>
+            <li class="nav-link py-4">
+                <a href="png.html">PNG</a>
+            </li>
+            <li class="nav-link py-4">
+                <a href="psd.html">PSD</a>
+            </li>
+            <li class="nav-link py-4">
+                <a href="tutorials.html">Tutorials</a>
+            </li>
+            <li class="nav-link w-24 py-4 group">
+                <a href="">Categories <span class="bi bi-caret-down-fill"></span></a>
+                <div class="drowpdown-menu hidden z-50 bg-slate-50 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute float-left p-2 text-slate-500 text-left rounded-lg shadow-lg mt-4 m-0 border">
+                    <a href="" class="hover:text-slate-700">Animals</a>
+                    <a href="" class="hover:text-slate-700">Animals 2</a>
+                    <a href="" class="hover:text-slate-700">Animals 3</a>
+                    <a href="" class="hover:text-slate-700">Animals 4</a>
+                    <a href="" class="hover:text-slate-700">Animals 5</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                </div>
+            </li>
+        </ul>
+        <div class="flex gap-3 md:w-full justify-end items-center">
+            <a href="" class="nav-link">Log In</a>
+            <a href="" class="nav-link border border-slate-500 px-2 py-1 rounded-md text-slate-500 hover:text-slate-600 hover:bg-slate-200 hover:border hover:border-slate-300 hover:ring hover:ring-offset-1 hover:ring-sky-300">Sign Up</a>
+        </div>
+    </aside>
+    <!-- END: Navbar -->
+
+    <!-- START: Content -->
+    <div class="fixed z-10 top-12 md:top-14 flex w-full px-4 md:px-32 py-2" id="search">
+        <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
+            <label class="relative flex w-full">
+                <select class="py-1 md:py-2 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
+                    <option value="">All</option>
+                    <option value="">Vectors</option>
+                    <option value="">Photos</option>
+                    <option value="">PNG</option>
+                    <option value="">PSD</option>
+                    <option value="">Tutorials</option>
+                </select>
+                <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-r-md px-3 md:px-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                <span class="sr-only">Search</span>
+                <span class="absolute inset-y-0 right-1 md:right-2 flex items-center pr-2">
+                    <a href="" type="submit" class="bi bi-search text-slate-400"></a>
+                </span>
+            </label>
+        </form>
+    </div>
+    <div class="flex flex-col w-full md:px-32 mb-5 mt-24 md:mt-28">
+        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-4 md:px-0">
+            Find Your Inspiration Here
+        </h1>
+        <div class="flex text-center gap-8 p-6 md:p-10 overflow-x-auto">
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/featured-1.png')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    Vectors
+                </h1>
+            </a>
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/freecraftstock27165982312.jpg')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    Photos
+                </h1>
+            </a>
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/featured-2.png')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    PSD
+                </h1>
+            </a>
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/featured-3.png')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    PNG
+                </h1>
+            </a>
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/browse-3.png')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    PSD
+                </h1>
+            </a>
+            <a href="" class="group">
+                <div class="flex h-24 w-24 md:h-32 md:w-32 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-32 md:w-32 bg-cover bg-[url('/assets/images/browse-2.png')] bg-center group-hover:scale-110"></div>
+                </div>
+                <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
+                    Tutorials
+                </h1>
+            </a>
+        </div>
+    </div>
+    <div class="flex flex-col w-full px-4 md:px-32 mb-16 md:mb-8">
+        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold mb-3 md:mb-5">
+            Explore Popular Vectors
+        </h1>
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/freecraftstock27165982312.jpg" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/browse-1.png" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/browse-2.png" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/browse-3.png" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/browse-4.png" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+            <div class="relative h-min w-full overflow-hidden group">
+                <img class="object-cover" src="assets/images/browse-5.png" alt="subway" />
+                <div class="card-detail-top">
+                    <div class="flex flex-col w-full items-end">
+                        <span class="text-white">Vectors</span>
+                    </div>
+                </div>
+                <div class="card-detail-bottom">
+                    <div class="flex flex-col w-full">
+                        <div class="font-medium text-lg text-white">
+                            Free vectors border blue
+                        </div>
+                        <div class="flex items-center w-full">
+                            <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
+                            <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+                            <div class="flex w-full justify-end">
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="inset-0 absolute z-10"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="hidden md:flex flex-col w-full bg-blue-600 md:px-32 py-4">
+        <div class="flex w-full border-b border-slate-300 items-center py-2">
+            <div class="flex text-white ">
+                <img src="/assets/icons/ic_wallet.svg" class="h-10" />
+                <span class="text-4xl font-semibold ml-2">Freecraftstock</span>
+            </div>
+            <ul class="flex justify-end w-full gap-3 text-slate-300">
+                <li class="nav-link"><a href="">About</a></li>
+                <li class="nav-link"><a href="">Contact Us</a></li>
+                <li class="nav-link"><a href="">Term of Use</a></li>
+            </ul>
+        </div>
+        <div class="w-full text-sm text-slate-300 text-center pt-3">
+            © 2022
+            <a href="" class="text-white font-semibold hover:text-slate-200">freecraftstock.com</a> | All Rights Reserved.
+        </div>
+    </footer>
+    <div class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
+        <a href="" class="bi bi-house"></a>
+        <a href="" class="bi bi-tags"></a>
+        <a href="" class="bi bi-heart"></a>
+        <a href="" class="bi bi-download"></a>
+        <a href="" class="bi bi-person-circle"></a>
+    </div>
+    <!-- END: Content -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".__scroll-selector").removeClass("hidden").flickity({
+                cellAlign: "left",
+                contain: true,
+                groupCells: 1,
+                wrapAround: false,
+                pageDots: false,
+                prevNextButtons: false,
+                draggable: ">1",
+            });
+        });
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $("#search").addClass("top-0 bg-gray-50 shadow");
+                $("#search").removeClass("top-12 md:top-14");
+            } else if (scroll <= 50) {
+                $("#search").removeClass("top-0 bg-gray-50 shadow");
+                $("#search").addClass("top-12 md:top-14");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
