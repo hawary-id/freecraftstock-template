@@ -17,15 +17,36 @@
     <script src="assets/script/tailwind-config.js"></script>
 
     <style type="text/tailwindcss">
-        .flex::before, .flex::after { display: none !important; } @layer components { .nav-link { @apply text-sm font-semibold; } .nav-link.active { @apply text-white font-semibold; } .nav-link:hover { @apply text-white; } .card-detail-top { @apply absolute top-0
-        h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300; } .card-detail-bottom { @apply absolute bottom-0 h-24 left-0 right-0 bg-gradient-to-t
-        from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300; } }
+        .flex::before,
+      .flex::after {
+        display: none !important;
+      }
+      @layer components {
+        .nav-link {
+          @apply text-sm;
+        }
+        .nav-link.active {
+          @apply text-white;
+        }
+        .nav-link:hover {
+          @apply text-white;
+        }
+        .card-detail-top {
+          @apply absolute top-0
+        h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300;
+        }
+        .card-detail-bottom {
+          @apply absolute bottom-0 h-24 left-0 right-0 bg-gradient-to-t
+        from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300;
+        }
+      }
     </style>
 </head>
 
 <body class="font-poppins bg-slate-100">
     <!-- START: Navbar -->
-    <aside class="navbar fixed z-50 top-0 flex w-full px-4 py-2 md:py-0 justify-between md:justify-start items-center bg-blue-700 text-slate-300 rounded-b-md md:rounded-none">
+    <aside
+        class="navbar fixed z-50 top-0 flex w-full px-3 lg:px-64 py-2 md:py-0 justify-between md:justify-start items-center bg-blue-700 text-slate-300 rounded-b-md md:rounded-none">
         <a href="" class="text-2xl bi bi-list md:hidden"></a>
         <a href="index.html" class="hidden md:flex text-2xl text-white font-semibold mr-2">
             <span class="text-2xl bi bi-house"></span>
@@ -49,7 +70,8 @@
             </li>
             <li class="nav-link w-24 py-5 group">
                 <a href="">Categories <span class="bi bi-caret-down-fill"></span></a>
-                <div class="drowpdown-menu hidden bg-slate-800 z-50 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute float-left py-4 px-6 text-left font-sm text-slate-300 rounded-lg shadow-lg mt-5">
+                <div
+                    class="drowpdown-menu hidden bg-slate-800 z-30 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute py-4 px-6 text-left font-sm text-slate-300 rounded shadow-lg mt-5">
                     <a href="" class="mr-12 hover:text-white">Animals</a>
                     <a href="" class="mr-12 hover:text-white">Animals</a>
                     <a href="" class="mr-12 hover:text-white">Animals</a>
@@ -67,22 +89,26 @@
         </ul>
         <div class="flex gap-3 md:w-full justify-end items-center">
             <a href="" class="nav-link">Log In</a>
-            <a href="" class="nav-link border px-2 py-1 rounded-md text-slate-50 hover:text-slate-200 hover:bg-blue-700 hover:border hover:border-slate-300 hover:ring hover:ring-offset-1 hover:ring-sky-300">Sign Up</a>
+            <a href=""
+                class="nav-link border px-2 py-1 rounded-md text-slate-50 hover:text-slate-200 hover:bg-blue-700 hover:border hover:border-slate-300 hover:ring hover:ring-offset-1 hover:ring-sky-300">Sign
+                Up</a>
         </div>
     </aside>
     <!-- END: Navbar -->
 
     <!-- START: Content -->
-    <div class="flex flex-col w-full h-64 md:h-[500px] px-4 mt-10 md:mt-14 justify-center items-center text-center text-white bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500">
-        <h1 class="text-xl md:text-4xl font-bold">
+    <div
+        class="flex flex-col w-full h-64 md:h-[500px] px-3 lg:px-64 mt-10 md:mt-14 justify-center items-center text-center text-white bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500">
+        <h1 class="text-xl md:text-3xl font-bold">
             Discover over 1 million free vector, photos, icon, PNG and others
         </h1>
         <p class="text-md md:text-lg py-2 md:py-4">
             Unlimited inspiration for extraordinary works
         </p>
         <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
-            <label class="relative flex w-full md:w-[600px]">
-                <select class="py-1 md:py-4 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
+            <label class="relative flex w-full md:w-[900px]">
+                <select
+                    class="py-1 md:py-4 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
                     <option value="">All</option>
                     <option value="">Vectors</option>
                     <option value="">Photos</option>
@@ -90,7 +116,9 @@
                     <option value="">PSD</option>
                     <option value="">Tutorials</option>
                 </select>
-                <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-r-md px-3 md:px-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                <input
+                    class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-r-md px-3 md:px-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                    placeholder="Search for anything..." type="text" name="search" />
                 <span class="sr-only">Search</span>
                 <span class="absolute inset-y-0 right-1 md:right-2 flex items-center pr-2">
                     <a href="" type="submit" class="bi bi-search text-slate-400"></a>
@@ -109,58 +137,79 @@
             </a>
         </div>
     </div>
-    <div class="flex w-full bg-violet-600 py-4 px-4 md:h-22 justify-center items-center gap-2 md:gap-3 text-slate-50 text-sm md:text-lg mb-6 md:mb-10">
+    <div
+        class="flex w-full bg-violet-600 py-4 px-4 md:h-22 justify-center items-center gap-2 md:gap-3 text-slate-50 text-sm md:text-lg mb-6 md:mb-10">
         <div class="">Get 1 million vector assets, photos, icons for free</div>
-        <a href="" class="bg-orange-400 px-3 py-1 border rounded-md text-center hover:bg-orange-500 hover:ring hover:ring-blue-300">Sign Up Free</a>
+        <a href=""
+            class="bg-orange-400 px-3 py-1 border rounded-md text-center hover:bg-orange-500 hover:ring hover:ring-blue-300">Sign
+            Up Free</a>
     </div>
-    <div class="flex flex-col w-full  mb-5">
-        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-4">
+    <div class="flex flex-col w-full mb-5 lg:px-64">
+        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-3">
             Find Your Inspiration Here
         </h1>
         <div class="flex text-center gap-8 md:gap-14 p-6 md:p-10 overflow-x-auto">
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-1.png')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-1.png')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     Vectors
                 </h1>
             </a>
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/freecraftstock27165982312.jpg')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/freecraftstock27165982312.jpg')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     Photos
                 </h1>
             </a>
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-2.png')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-2.png')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     PSD
                 </h1>
             </a>
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-3.png')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-3.png')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     PNG
                 </h1>
             </a>
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-3.png')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-3.png')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     PSD
                 </h1>
             </a>
             <a href="" class="group">
-                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-2.png')] bg-center group-hover:scale-110"></div>
+                <div
+                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div
+                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-2.png')] bg-center group-hover:scale-110">
+                    </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
                     Tutorials
@@ -168,11 +217,11 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-col w-full px-4  mb-16 md:mb-8">
+    <div class="flex flex-col w-full px-3 lg:px-64 mb-16 md:mb-8">
         <h1 class="text-xl md:text-2xl text-slate-600 font-semibold mb-3 md:mb-5">
             Explore Popular Assets
         </h1>
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-3 space-y-3">
             <div class="relative h-min w-full overflow-hidden group">
                 <img class="object-cover" src="assets/images/freecraftstock27165982312.jpg" alt="subway" />
                 <div class="card-detail-top">
@@ -189,7 +238,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -212,7 +262,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -235,7 +286,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -258,7 +310,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -281,7 +334,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -304,7 +358,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -327,7 +382,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -350,7 +406,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -373,7 +430,8 @@
                             <img src="/assets/images/avatar.png" class="rounded-full h-8 w-8" alt="" />
                             <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
                             <div class="flex w-full justify-end">
-                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span class="ml-2">10</span></span>
+                                <span class="text-xl bi bi-heart-fill items-end shrink text-white"><span
+                                        class="ml-2">10</span></span>
                             </div>
                         </div>
                     </div>
@@ -382,9 +440,9 @@
             </div>
         </div>
     </div>
-    <footer class="hidden md:flex flex-col w-full bg-blue-600  py-4">
+    <footer class="hidden md:flex flex-col w-full bg-blue-600 py-4">
         <div class="flex w-full border-b border-slate-300 items-center py-2">
-            <div class="flex text-white ">
+            <div class="flex text-white">
                 <img src="/assets/icons/ic_wallet.svg" class="h-10" />
                 <span class="text-4xl font-semibold ml-2">Freecraftstock</span>
             </div>
@@ -396,10 +454,12 @@
         </div>
         <div class="w-full text-sm text-slate-300 text-center pt-3">
             © 2022
-            <a href="" class="text-white font-semibold hover:text-slate-200">freecraftstock.com</a> | All Rights Reserved.
+            <a href="" class="text-white font-semibold hover:text-slate-200">freecraftstock.com</a>
+            | All Rights Reserved.
         </div>
     </footer>
-    <div class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
+    <div
+        class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
         <a href="" class="bi bi-house"></a>
         <a href="" class="bi bi-tags"></a>
         <a href="" class="bi bi-heart"></a>
@@ -408,11 +468,12 @@
     </div>
     <!-- END: Content -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".__scroll-selector").removeClass("hidden").flickity({
                 cellAlign: "left",
                 contain: true,
@@ -423,7 +484,7 @@
                 draggable: ">1",
             });
         });
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll >= 100) {
                 $(".navbar").addClass("shadow-lg");
