@@ -17,52 +17,47 @@
     <script src="assets/script/tailwind-config.js"></script>
 
     <style type="text/tailwindcss">
-        .flex::before, .flex::after { display: none !important; } @layer components { .nav-link { @apply text-sm font-semibold; } .nav-link.active { @apply text-slate-700 font-semibold; } .nav-link:hover { @apply text-slate-700; } .card-detail-top { @apply absolute
-        top-0 h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300; } .card-detail-bottom { @apply absolute bottom-0 h-24 left-0 right-0
-        bg-gradient-to-t from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300; } }
+        .flex::before, .flex::after { display: none !important; } @layer components { .nav-link { @apply text-sm font-semibold; } .nav-link.active { @apply text-white font-semibold; } .nav-link:hover { @apply text-white; } .card-detail-top { @apply absolute top-0
+        h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300; } .card-detail-bottom { @apply absolute bottom-0 h-24 left-0 right-0 bg-gradient-to-t
+        from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300; } }
     </style>
 </head>
 
 <body class="font-poppins bg-slate-100">
     <!-- START: Navbar -->
-    <aside class="flex w-full px-4 md:px-32 py-2 md:py-0 justify-between md:justify-start items-center bg-slate-50 text-gray-400 rounded-b-md md:rounded-none shadow">
+    <aside class="flex w-full px-4 py-2 justify-between md:justify-start items-center bg-slate-800 text-gray-400 rounded-b-md md:rounded-none shadow">
         <a href="" class="text-2xl bi bi-list md:hidden"></a>
-        <a href="index.html" class="hidden md:flex text-2xl text-slate-500 font-semibold mr-2">
-            <span class="text-2xl bi bi-house"></span>
-            <span class="ml-2">Freecraftstock</span>
-        </a>
         <ul class="hidden md:flex gap-5 ml-10">
-            <li class="nav-link py-4">
+            <li class="nav-link active">
                 <a href="vectors.html">Vectors</a>
             </li>
-            <li class="nav-link py-4">
+            <li class="nav-link">
                 <a href="photos.html">Photos</a>
             </li>
-            <li class="nav-link py-4">
+            <li class="nav-link">
                 <a href="png.html">PNG</a>
             </li>
-            <li class="nav-link py-4">
+            <li class="nav-link">
                 <a href="psd.html">PSD</a>
             </li>
-            <li class="nav-link py-4">
+            <li class="nav-link">
                 <a href="tutorials.html">Tutorials</a>
             </li>
-            <li class="nav-link w-24 py-4 group">
+            <li class="nav-link w-24 group">
                 <a href="">Categories <span class="bi bi-caret-down-fill"></span></a>
-                <div class="drowpdown-menu hidden z-50 bg-slate-50 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute float-left p-2 text-slate-500 text-left rounded-lg shadow-lg mt-4 m-0 border">
-                    <a href="" class="hover:text-slate-700">Animals</a>
-                    <a href="" class="hover:text-slate-700">Animals 2</a>
-                    <a href="" class="hover:text-slate-700">Animals 3</a>
-                    <a href="" class="hover:text-slate-700">Animals 4</a>
-                    <a href="" class="hover:text-slate-700">Animals 5</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
-                    <a href="" class="hover:text-slate-700">Animals 6</a>
+                <div class="drowpdown-menu hidden bg-slate-800 z-50 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute float-left py-4 px-6 text-left font-sm text-slate-300 rounded pt-6 shadow-lg">
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
+                    <a href="" class="mr-12 hover:text-white">Animals</a>
                 </div>
             </li>
         </ul>
@@ -74,7 +69,11 @@
     <!-- END: Navbar -->
 
     <!-- START: Content -->
-    <div class="fixed z-10 top-12 md:top-14 flex w-full px-4 md:px-32 py-2" id="search">
+    <div class="fixed z-10 top-10 md:top-12 flex w-full items-center px-3 py-2 bg-white" id="search">
+        <a href="index.html" class="flex text-2xl text-slate-500 font-semibold mr-3">
+            <span class="text-2xl bi bi-house"></span>
+            <span class="hidden md:block ml-2">Freecraftstock</span>
+        </a>
         <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
             <label class="relative flex w-full">
                 <select class="py-1 md:py-2 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
@@ -93,8 +92,8 @@
             </label>
         </form>
     </div>
-    <div class="flex flex-col w-full md:px-32 mb-5 mt-24 md:mt-28">
-        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-4 md:px-0">
+    <div class="flex flex-col w-full mb-5 mt-24 md:mt-28">
+        <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-4">
             Find Your Inspiration Here
         </h1>
         <div class="flex text-center gap-8 p-6 md:p-10 overflow-x-auto">
@@ -148,7 +147,7 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-col w-full px-4 md:px-32 mb-16 md:mb-8">
+    <div class="flex flex-col w-full px-4 mb-16 md:mb-8">
         <h1 class="text-xl md:text-2xl text-slate-600 font-semibold mb-3 md:mb-5">
             Explore Popular Vectors
         </h1>
@@ -293,7 +292,7 @@
             </div>
         </div>
     </div>
-    <footer class="hidden md:flex flex-col w-full bg-blue-600 md:px-32 py-4">
+    <footer class="hidden md:flex flex-col w-full bg-blue-600 py-4">
         <div class="flex w-full border-b border-slate-300 items-center py-2">
             <div class="flex text-white ">
                 <img src="/assets/icons/ic_wallet.svg" class="h-10" />
