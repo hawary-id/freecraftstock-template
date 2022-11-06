@@ -83,57 +83,52 @@
     <!-- END: Navbar -->
 
     <!-- START: Content -->
-    <div class="fixed z-40 top-12 flex w-full justify-between items-center px-3 md:px-6 py-2 bg-white shadow"
-        id="search">
-        <a href="index.html" class="flex text-2xl text-slate-500 font-semibold mr-3">
-            <span class="text-2xl bi bi-house"></span>
-            <span class="hidden md:block ml-2">Freecraftstock</span>
-        </a>
-        <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
-            <label class="relative flex w-full">
-                <select
-                    class="hidden md:block py-2 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
-                    <option value="">All</option>
-                    <option value="">Vectors</option>
-                    <option value="">Photos</option>
-                    <option value="">PNG</option>
-                    <option value="">PSD</option>
-                    <option value="">Tutorials</option>
-                </select>
-                <input
-                    class="placeholder:italic placeholder:text-slate-400 placeholder:text-sm block bg-white w-full border border-slate-300 rounded-md md:rounded-l-none md:rounded-r-md px-3 py-2 md:px-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm"
-                    placeholder="Search for anything..." type="text" name="search" />
-                <span class="sr-only">Search</span>
-                <span class="absolute inset-y-0 right-1 md:right-2 flex items-center pr-2">
-                    <a href="" type="submit" class="bi bi-search text-slate-400"></a>
-                </span>
-            </label>
-        </form>
-        <!-- <div
-            class="md:hidden border rounded py-1 px-2 ml-3 active:bg-slate-200 active:outline-none active:border-sky-500 active:ring-sky-500 active:ring-1">
-            <span class="text-2xl bi bi-filter"></span>
-        </div> -->
+    <div class="fixed flex flex-col z-40 top-12 flex w-full justify-between items-center bg-white shadow" id="search">
+        <div class="flex w-full items-center border-b px-3 md:px-6 py-2">
+            <a href="index.html" class="flex text-2xl text-slate-500 font-semibold mr-3">
+                <span class="text-2xl bi bi-house"></span>
+                <span class="hidden md:block ml-2">Freecraftstock</span>
+            </a>
+            <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
+                <label class="relative flex w-full">
+                    <select
+                        class="hidden md:block py-2 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
+                        <option value="">All</option>
+                        <option value="">Vectors</option>
+                        <option value="">Photos</option>
+                        <option value="">PNG</option>
+                        <option value="">PSD</option>
+                        <option value="">Tutorials</option>
+                    </select>
+                    <input
+                        class="placeholder:italic placeholder:text-slate-400 placeholder:text-sm block bg-white w-full border border-slate-300 rounded-md md:rounded-l-none md:rounded-r-md px-3 py-2 md:px-5 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm"
+                        placeholder="Search for anything..." type="text" name="search" />
+                    <span class="sr-only">Search</span>
+                    <span class="absolute inset-y-0 right-1 md:right-2 flex items-center pr-2">
+                        <a href="" type="submit" class="bi bi-search text-slate-400"></a>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <div class="flex w-full px-3 py-3 gap-3 border-b top-26 bg-white overflow-x-auto text-sm text-slate-500">
+            <a href=""
+                class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-1 md:py-2 px-3 hover:bg-slate-200"><span
+                    class="bi bi-search mr-1"></span>Vectors</a>
+            <a href=""
+                class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-1 md:py-2 px-3 hover:bg-slate-200"><span
+                    class="bi bi-search mr-1"></span>Vectors</a>
+            <a href=""
+                class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-1 md:py-2 px-3 hover:bg-slate-200"><span
+                    class="bi bi-search mr-1"></span>Vectors</a>
+            <a href=""
+                class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-1 md:py-2 px-3 hover:bg-slate-200"><span
+                    class="bi bi-search mr-1"></span>Vectors</a>
+        </div>
     </div>
 
     <div class="flex mt-14 mb-16 md:mb-5">
         <div class="w-full">
-            <div class="fixed z-30 flex w-full py-3 px-3 md:px-6 gap-3 border-b top-26 bg-white overflow-x-auto text-sm text-slate-500"
-                id="recomended">
-                <!-- <a href="" class="hidden border border-slate-300 rounded px-3 py-2 bg-slate-200 hover:bg-slate-300"
-                    id="btn-filter-show"><span class="bi bi-filter-left"></span>Filters</a> -->
-                <a href=""
-                    class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-2 px-3 hover:bg-slate-200"><span
-                        class="bi bi-search mr-1"></span>Vectors</a>
-                <a href=""
-                    class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-2 px-3 hover:bg-slate-200"><span
-                        class="bi bi-search mr-1"></span>Vectors</a>
-                <a href=""
-                    class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-2 px-3 hover:bg-slate-200"><span
-                        class="bi bi-search mr-1"></span>Vectors</a>
-                <a href=""
-                    class="flex items-center border border-slate-300 rounded-lg px-2 md:px-3 py-2 px-3 hover:bg-slate-200"><span
-                        class="bi bi-search mr-1"></span>Vectors</a>
-            </div>
+
             <Div class="text-2xl text-slate-900 text-center mt-20 md:mt-24 mb-3 px-3 md:px-6">Free Vectors</Div>
             <div class="flex justify-end mb-2 md:mb-5 px-3 md:px-6">
                 <div class="text-sm font-light text-slate-400 mr-2">Sort by :</div>
