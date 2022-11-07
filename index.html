@@ -17,36 +17,15 @@
     <script src="assets/script/tailwind-config.js"></script>
 
     <style type="text/tailwindcss">
-        .flex::before,
-      .flex::after {
-        display: none !important;
-      }
-      @layer components {
-        .nav-link {
-          @apply text-sm;
-        }
-        .nav-link.active {
-          @apply text-white;
-        }
-        .nav-link:hover {
-          @apply text-white;
-        }
-        .card-detail-top {
-          @apply absolute top-0
-        h-14 left-0 right-0 bg-gradient-to-b from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300;
-        }
-        .card-detail-bottom {
-          @apply absolute bottom-0 h-24 left-0 right-0 bg-gradient-to-t
-        from-black flex justify-between items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300;
-        }
-      }
+        .flex::before, .flex::after { display: none !important; } @layer components { .nav-link { @apply text-sm; } .nav-link.active { @apply text-white; } .nav-link:hover { @apply text-white; } .card-detail-top { @apply absolute top-0 h-14 left-0 right-0 bg-gradient-to-b
+        from-black flex justify-between items-center px-5 translate-y-[-500px] group-hover:translate-y-0 transition ease-in-out duration-300; } .card-detail-bottom { @apply absolute bottom-0 h-24 left-0 right-0 bg-gradient-to-t from-black flex justify-between
+        items-center px-5 translate-y-[500px] group-hover:translate-y-0 transition ease-in-out duration-300; } }
     </style>
 </head>
 
 <body class="font-poppins bg-slate-100">
     <!-- START: Navbar -->
-    <aside
-        class="navbar fixed z-50 top-0 flex w-full px-3 lg:px-64 py-2 md:py-0 justify-between md:justify-start items-center bg-blue-700 text-slate-300 rounded-b-md md:rounded-none">
+    <aside class="navbar fixed z-50 top-0 flex w-full px-3 lg:px-52 py-2 md:py-0 justify-between md:justify-start items-center bg-blue-700 text-slate-300 rounded-b-md md:rounded-none">
         <a href="" class="text-2xl bi bi-list md:hidden"></a>
         <a href="index.html" class="hidden md:flex text-2xl text-white font-semibold mr-2">
             <span class="text-2xl bi bi-house"></span>
@@ -70,8 +49,7 @@
             </li>
             <li class="nav-link w-24 py-5 group">
                 <a href="">Categories <span class="bi bi-caret-down-fill"></span></a>
-                <div
-                    class="drowpdown-menu hidden bg-slate-800 z-30 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute py-4 px-6 text-left font-sm text-slate-300 rounded shadow-lg mt-5">
+                <div class="drowpdown-menu hidden bg-slate-800 z-30 group-hover:grid grid-rows-4 grid-flow-col gap-4 min-w-max absolute py-4 px-6 text-left font-sm text-slate-300 rounded shadow-lg mt-5">
                     <a href="" class="mr-12 hover:text-white">Animals</a>
                     <a href="" class="mr-12 hover:text-white">Animals</a>
                     <a href="" class="mr-12 hover:text-white">Animals</a>
@@ -89,16 +67,14 @@
         </ul>
         <div class="flex gap-3 md:w-full justify-end items-center">
             <a href="sign_in.html" class="nav-link">Log In</a>
-            <a href="sign_up.html"
-                class="nav-link border px-2 py-1 rounded-md text-slate-50 hover:text-slate-200 hover:bg-blue-700 hover:border hover:border-slate-300 hover:ring hover:ring-offset-1 hover:ring-sky-300">Sign
+            <a href="sign_up.html" class="nav-link border px-2 py-1 rounded-md text-slate-50 hover:text-slate-200 hover:bg-blue-700 hover:border hover:border-slate-300 hover:ring hover:ring-offset-1 hover:ring-sky-300">Sign
                 Up</a>
         </div>
     </aside>
     <!-- END: Navbar -->
 
     <!-- START: Content -->
-    <div
-        class="flex flex-col w-full h-64 md:h-[500px] px-3 lg:px-64 mt-10 md:mt-14 justify-center items-center text-center text-white bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500">
+    <div class="flex flex-col w-full h-64 md:h-[500px] px-3 lg:px-52 mt-10 md:mt-14 justify-center items-center text-center text-white bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500">
         <h1 class="text-xl md:text-3xl font-bold">
             Discover over 1 million free vector, photos, icon, PNG and others
         </h1>
@@ -108,7 +84,7 @@
         <form method="POST" action="" class="flex w-full text-slate-600 justify-center">
             <label class="relative flex w-full md:w-[900px]">
                 <select
-                    class="py-1 md:py-4 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
+                    class="py-1 md:py-3 border border-slate-300 rounded-l-md px-1 md:px-3 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm">
                     <option value="">All</option>
                     <option value="">Vectors</option>
                     <option value="">Photos</option>
@@ -137,23 +113,19 @@
             </a>
         </div>
     </div>
-    <div
-        class="flex w-full bg-violet-600 py-4 px-4 md:h-22 justify-center items-center gap-2 md:gap-3 text-slate-50 text-sm md:text-lg mb-6 md:mb-10">
+    <div class="flex w-full bg-violet-600 py-4 px-4 md:h-22 justify-center items-center gap-2 md:gap-3 text-slate-50 text-sm md:text-lg mb-6 md:mb-10">
         <div class="">Get 1 million vector assets, photos, icons for free</div>
-        <a href="sign_up.html"
-            class="bg-orange-400 px-3 py-1 border rounded-md text-center hover:bg-orange-500 hover:ring hover:ring-blue-300">Sign
+        <a href="sign_up.html" class="bg-orange-400 px-3 py-1 border rounded-md text-center hover:bg-orange-500 hover:ring hover:ring-blue-300">Sign
             Up Free</a>
     </div>
-    <div class="flex flex-col w-full mb-5 lg:px-64">
+    <div class="flex flex-col w-full mb-5 lg:px-52">
         <h1 class="text-xl md:text-2xl text-slate-600 font-semibold px-3">
             Find Your Inspiration Here
         </h1>
         <div class="flex text-center gap-8 md:gap-14 p-6 md:p-10 overflow-x-auto">
             <a href="vectors.html" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-1.png')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-1.png')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -161,10 +133,8 @@
                 </h1>
             </a>
             <a href="" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/freecraftstock27165982312.jpg')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/freecraftstock27165982312.jpg')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -172,10 +142,8 @@
                 </h1>
             </a>
             <a href="" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-2.png')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-2.png')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -183,10 +151,8 @@
                 </h1>
             </a>
             <a href="" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-3.png')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/featured-3.png')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -194,10 +160,8 @@
                 </h1>
             </a>
             <a href="" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-3.png')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-3.png')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -205,10 +169,8 @@
                 </h1>
             </a>
             <a href="" class="group">
-                <div
-                    class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
-                    <div
-                        class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-2.png')] bg-center group-hover:scale-110">
+                <div class="flex h-24 w-24 md:h-28 md:w-28 ring-4 ring-offset-2 ring-sky-300 justify-center items-center bg-white rounded-full overflow-hidden mb-3 group-hover:ring-blue-400">
+                    <div class="transition ease-in-out duration-300 h-24 w-24 md:h-28 md:w-28 bg-cover bg-[url('/assets/images/browse-2.png')] bg-center group-hover:scale-110">
                     </div>
                 </div>
                 <h1 class="text-lg text-sky-500 group-hover:text-blue-400 group-hover:font-semibold">
@@ -217,18 +179,15 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-col w-full px-3 lg:px-64 mb-16 md:mb-8">
+    <div class="flex flex-col w-full px-3 lg:px-52 mb-16 md:mb-8">
         <h1 class="text-xl md:text-2xl text-slate-600 font-semibold mb-3 md:mb-5">
             Explore Popular Assets
         </h1>
         <div class="justify-center w-full justify-center">
             <ul class="image-gallery flex flex-wrap gap-4">
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/VWcPlbHglYc" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+                <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+                    <img src="https://source.unsplash.com/VWcPlbHglYc" alt="" class="object-cover w-full h-full align-middle rounded" />
+                    <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
                         <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
                         <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
                             <div class="flex flex-col w-full">
@@ -243,319 +202,311 @@
                                     <div class="flex w-full justify-end">
                                         <span class="text-base bi bi-heart-fill items-end shrink text-white">
                                             <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
                         </span>
                     </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/e6FMMambeO4" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/klCiPmzUw0Y" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/IdNOTjPeHrE" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/O0N9MF--hK4" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/FV3GConVSss" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/0ESjL-Nw22Y" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/KTVn62x6fFw" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/VSeVhmW4_JQ" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/07aFaTf24Kg" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-                <li
-                    class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
-                    <img src="https://source.unsplash.com/DqyYTM7pR2o" alt=""
-                        class="object-cover w-full h-full align-middle rounded" />
-                    <div
-                        class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
-                        <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
-                        <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
-                            <div class="flex flex-col w-full">
-                                <div class="text-base text-white">
-                                    Free vectors border blue
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="/assets/images/avatar.png"
-                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
-                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
-
-                                    <div class="flex w-full justify-end">
-                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
-                                            <span class="">10</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <a href="detail.html" class="inset-0 absolute z-10"></a>
-                </li>
-            </ul>
         </div>
     </div>
-    <footer class="hidden md:flex flex-col w-full bg-blue-600 px-64">
+    </span>
+    </div>
+    <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/e6FMMambeO4" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                <div class="flex flex-col w-full">
+                    <div class="text-base text-white">
+                        Free vectors border blue
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/assets/images/avatar.png"
+                            class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                        <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                        <div class="flex w-full justify-end">
+                            <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/klCiPmzUw0Y" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/IdNOTjPeHrE" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/O0N9MF--hK4" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/FV3GConVSss" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/0ESjL-Nw22Y" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/KTVn62x6fFw" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/VSeVhmW4_JQ" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/07aFaTf24Kg" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    <li class="relative flex h-[250px] md:h-[400px] w-full md:w-auto grow cursor-pointer group overflow-hidden">
+        <img src="https://source.unsplash.com/DqyYTM7pR2o" alt="" class="object-cover w-full h-full align-middle rounded" />
+        <div class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                            <div class="flex flex-col w-full">
+                                <div class="text-base text-white">
+                                    Free vectors border blue
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="/assets/images/avatar.png"
+                                        class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                    <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                    <div class="flex w-full justify-end">
+                                        <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                            <span class="">10</span>
+            </span>
+        </div>
+        </div>
+        </div>
+        </span>
+        </div>
+        <a href="detail.html" class="inset-0 absolute z-10"></a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <footer class="hidden md:flex flex-col w-full bg-blue-600 px-52">
         <div class="flex w-full border-b border-slate-400 items-center py-4">
             <div class="flex text-white w-full items-center">
-                <img src="/assets/icons/ic_wallet.svg" class="h-10" />
-                <div class="flex flex-col ml-2">
+                <!-- <img src="/assets/icons/ic_wallet.svg" class="h-10" /> -->
+                <div class="flex flex-col">
                     <span class="text-4xl font-semibold">Freecraftstock</span>
                     <span class="text-sm text-slate-300">Unlimited inspiration for extraordinary works</span>
                 </div>
             </div>
-            <ul class="flex justify-end w-full gap-3 text-slate-300">
-                <li class="nav-link"><a href="">About</a></li>
-                <li class="nav-link"><a href="">Contact Us</a></li>
-                <li class="nav-link"><a href="">Term of Use</a></li>
-            </ul>
+            <div class="flex justify-end self-end w-full">
+                <div class="flex flex-col">
+                    <a href="sign_up.html" class="bg-orange-400 w-28 self-end py-1 mb-2 text-sm text-slate-50 border rounded-md text-center hover:bg-orange-500 hover:ring hover:ring-blue-300">Sign Up Free</a>
+                    <ul class="flex gap-3 text-slate-300">
+                        <li class="nav-link"><a href="">About</a></li>
+                        <li class="nav-link"><a href="">Contact Us</a></li>
+                        <li class="nav-link"><a href="">Term of Use</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="w-full text-sm text-slate-300 text-center py-3">
-            <a href="" class="text-slate-100 text-xl font-semibold hover:text-slate-200">freecraftstock</a>
-            <span class="text-sm"> Copyright © 2022 All Rights Reserved.</span>
+        <div class="flex justify-between items-center w-full text-sm text-slate-300 text-center py-3">
+            <div class="flex">
+                <a href="" class="text-slate-100 font-semibold hover:text-slate-200 mr-2">www.freecraftstock.com</a>
+                <span class="text-sm">| Copyright © 2022 All Rights Reserved.</span>
+            </div>
+
+            <ul class="flex gap-3">
+                <li class="nav-link">
+                    <a href="" class="text-lg bi bi-pinterest"></a>
+                </li>
+                <li class="nav-link">
+                    <a href="" class="text-lg bi bi-instagram"></a>
+                </li>
+                <li class="nav-link">
+                    <a href="" class="text-lg bi bi-facebook"></a>
+                </li>
+                <li class="nav-link">
+                    <a href="" class="text-lg bi bi-youtube"></a>
+                </li>
+            </ul>
+
         </div>
     </footer>
-    <div
-        class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
+    <div class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
         <a href="" class="bi bi-house"></a>
         <a href="" class="bi bi-tags"></a>
         <a href="" class="bi bi-heart"></a>
@@ -564,8 +515,7 @@
     </div>
     <!-- END: Content -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
 </body>
 
