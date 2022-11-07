@@ -16,73 +16,149 @@
     <script src="assets/script/tailwind-config.js"></script>
 </head>
 
-<body class="font-poppins md:px-20 p-4 md:p-10 items-center bg-slate-700">
-    <div class="relative grid grid-cols-1 md:grid-cols-3 rounded-lg bg-white p-4 md:p-6">
-        <a href="" class="absolute px-2 py-1 bg-slate-200 rounded-full border -top-3 -right-3 md:-top-6 md:-right-6 hover:bg-slate-300"><span class="bi bi-x-lg"></span></a>
-        <div class="w-full md:col-span-2">
-            <div class="flex flex-col">
-                <img src="/assets/images/browse-1.png" class="h-96 place-self-center mb-5" alt="" />
-                <div class="w-full mb-4 ">
-                    <h1 class="text-base text-sky-500 font-semibold">Title</h1>
-                    <p class="text-sm text-slate-500">Lorem epsum</p>
-                    <div class="flex py-2 gap-3 overflow-x-auto">
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
-                        <a href="" class="px-2 py-1 rounded border bg-slate-100 text-slate-600 text-sm hover:bg-slate-200"><span class="bi bi-search"> Border</span></a>
+<body class="flex font-poppins bg-slate-800 justify-center">
+    <a href="" class="fixed z-10 top-0 right-3 md:right-48 px-3 py-3 rounded-full text-slate-50"><span
+            class="bi bi-x-lg"></span></a>
+    <div
+        class="absolute rounded-lg bg-white w-full md:w-3/4 top-10 md:top-4 rounded-lg py-3 px-0 md:p-4 inset-y-10 overflow-y-auto overflow-x-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-4">
+            <div class="col-span-1 md:col-span-3">
+                <div class="relative flex justify-center mb-2">
+                    <img src=" /assets/images/browse-1.png" class="h-max md:h-[600px]" alt="" />
+                    <div
+                        class="absolute h-full w-full opacity-50 z-10 bg-[url('/assets/icons/ic_play.svg')] bg-cover bg-center bg-repeat top-0 left-0">
+                    </div>
+                </div>
+                <div class="w-full mb-3 px-3 md:px-0 border-b md:border-none py-3">
+                    <h1 class="text-base md:text-lg text-slate-600 font-semibold">Woman wearing traditional ao dai
+                        clothing</h1>
+                    <p class="text-sm md:text-base text-slate-500 mb-1">Lorem epsum</p>
+                    <p class="text-sm font-light text-slate-500 mb-4">#152444235
+                        <span class="bi bi-clipboard cursor-pointer"></span>
+                    </p>
+                    <p class="text-sm font-light text-slate-500"><span class="bi bi-tags mr-1"></span>Related tags</p>
+                    <div class="flex text-center overflow-x-auto gap-3 py-4">
+                        <a href=""
+                            class="flex px-2 py-1 rounded bg-slate-200 border text-sm text-slate-500 hover:bg-slate-300">
+                            <span class="bi bi-search mr-1"></span>Vector
+                        </a>
+                        <a href=""
+                            class="flex px-2 py-1 rounded bg-slate-200 border text-sm text-slate-500 hover:bg-slate-300">
+                            <span class="bi bi-search mr-1"></span>Vector
+                        </a>
+                        <a href=""
+                            class="flex px-2 py-1 rounded bg-slate-200 border text-sm text-slate-500 hover:bg-slate-300">
+                            <span class="bi bi-search mr-1"></span>Vector
+                        </a>
+                        <a href=""
+                            class="flex px-2 py-1 rounded bg-slate-200 border text-sm text-slate-500 hover:bg-slate-300">
+                            <span class="bi bi-search mr-1"></span>Vector
+                        </a>
+                        <a href=""
+                            class="flex px-2 py-1 rounded bg-slate-200 border text-sm text-slate-500 hover:bg-slate-300">
+                            <span class="bi bi-search mr-1"></span>Vector
+                        </a>
                     </div>
                 </div>
 
             </div>
-        </div>
-        <div class="w-full md:col-span-1">
-            <img src="/assets/images/featured-3.png" class="w-full mb-3" alt="" />
-            <div class="flex items-stretch text-sm w-full gap-2 py-2 text-center">
-                <a href="" class="grow py-2 rounded bg-slate-200 self-center hover:bg-slate-300 text-slate-600"><span class="bi bi-folder-plus mr-1"></span>Collect</a>
-                <div class="relative flex">
-                    <a href="" class="px-3 py-2 rounded bg-slate-200 self-center hover:bg-slate-300 text-slate-600"><span class="bi bi-heart mr-1"></span>Like</a>
-                    <div class="absolute py-1 px-2 text-sm rounded-full bg-pink-600 text-slate-50 -top-3 -right-2">10</div>
+            <div class="col-span-1 mb-3">
+                <div class="flex w-full hidden md:block mb-4">
+                    <span class="font-semibold text-sm">ADS</span>
+                    <img src="/assets/images/browse-2.png" class="w-full border border-slate-600" alt="" />
                 </div>
-                <a href="" class="px-3 py-2 rounded bg-slate-200 self-center hover:bg-slate-300 text-slate-600"><span class="bi bi-share mr-1"></span>Share</a>
-                <a href="" class="px-3 py-2 rounded bg-slate-200 self-center hover:bg-slate-300 text-slate-600"><span class="bi bi-pinterest"></span></a>
-            </div>
-            <a href="" class="w-full block text-center text-white py-3 rounded-md bg-sky-500 hover:bg-sky-600 mb-3"><span class="bi bi-download"></span>Download</a>
-            <div class="flex flex-col w-full border-b mb-4">
-                <p class="text-slate-600 text-sm mb-2">Free License <a href="" class="text-sky-600 ml-1 hover:text-sky-700">More Info</a></p>
-                <p class="text-slate-600 text-sm mb-2">Attribute is required <a href="" class="text-sky-600 ml-1 hover:text-sky-700">More Info</a></p>
-                <p class="text-slate-600 text-sm mb-2">File type vectors <a href="" class="text-sky-600 ml-1 hover:text-sky-700">How to edit?</a></p>
-            </div>
-            <div class="flex justify-between gap-6">
-                <a href="" class="flex items-center">
-                    <img src="/assets/images/avatar.png" class="h-12 w-12 rounded-full border border-sky-300" alt="" />
-                    <div href="" class="flex flex-col ml-2">
-                        <div href="" class="text-base text-sky-500">Freecraftstock</div>
-                        <div class="text-sm text-slate-400">1,500 k</div>
+                <div class="flex flex-col w-full py-3">
+                    <p class="text-sm text-slate-500 font-semilight mb-2"><span class="bi bi-gem mr-1"></span>Free
+                        License
+                        <a href="" class="text-sky-500 hover:text-sky-600 ml-2">More Info</a>
+                    </p>
+                    <p class="text-sm text-slate-500 font-semilight mb-2"><span class="bi bi-brush mr-1"></span>Atribute
+                        is
+                        required
+                        <a href="" class="text-sky-500 hover:text-sky-600 ml-2">How to attribute?</a>
+                    </p>
+                    <p class="text-sm text-slate-500 font-semilight"><span class="bi bi-file-earmark mr-1"></span>File
+                        type :
+                        <a href="" class="text-sky-500 hover:text-sky-600 ml-2">How to edit?</a>
+                    </p>
+                </div>
+                <div class="flex w-full py-2 gap-2 px-3 md:px-0">
+                    <a href=""
+                        class="grow py-2 rounded bg-slate-200 border border-slate-300 text-sm text-center hover:bg-slate-300">
+                        <span class="bi bi-folder-plus"> Collect</span>
+                    </a>
+                    <a href=""
+                        class="px-3 py-2 rounded bg-slate-200 border border-slate-300 text-sm text-center hover:bg-slate-300">
+                        <span class="bi bi-heart"></span>
+                    </a>
+                    <a href=""
+                        class="px-3 py-2 rounded bg-slate-200 border border-slate-300 text-sm text-center hover:bg-slate-300">
+                        <span class="bi bi-share"></span>
+                    </a>
+                    <a href=""
+                        class="px-3 py-2 rounded bg-slate-200 border border-slate-300 text-sm text-center hover:bg-slate-300">
+                        <span class="bi bi-pinterest"></span>
+                    </a>
+                </div>
+                <div class="flex w-full px-3 md:px-0 mb-4">
+                    <a href=""
+                        class="w-full block py-2 text-center bg-emerald-300 rounded border border-slate-300 hover:bg-emerald-400">
+                        <span class="bi bi-download mr-1"></span>Download
+                    </a>
+                </div>
+                <div class="flex w-full px-3 md:px-0 gap-5">
+                    <div class="flex items-center">
+                        <img src="/assets/images/avatar.png" class="h-14 w-14 rounded-full border border-sky-300"
+                            alt="" />
+                        <div class="flex flex-col ml-2">
+                            <a href="" class="text-sky-300 font-semibold text-base">Freecraftstock</a>
+                            <small class="text-sm text-slate-400 font-light">1,000 Followers</small>
+                        </div>
                     </div>
-                </a>
-                <div class="flex grow">
-                    <a href="" class="w-full text-center py-2 rounded bg-slate-300 self-center hover:bg-slate-400 hover:text-slate-50 text-slate-600">Follow</a>
+                    <div class="flex grow items-center text-center">
+                        <div class="py-1 grow rounded bg-slate-200 border border-slate-300 hover:bg-slate-300">Follow
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-span-1 md:col-span-4 border-t py-3 px-3 md:px-0">
+                <div class="text-sm text-slate-500 font-light mb-3">Similars</div>
 
-        </div>
-        <div class="col-span-4 mt-4">
-            <div class="text-sm text-slate-500">Similars</div>
+                <div class="flex block w-full overflow-x-auto gap-3">
+                    <div class="relative flex h-[200px] w-[450px] cursor-pointer group overflow-hidden">
+                        <img src="https://source.unsplash.com/VWcPlbHglYc" alt=""
+                            class="object-cover w-full h-full align-middle rounded" />
+                        <div
+                            class="overlay flex items-center absolute h-full w-full bg-slate-900/50 top-0 left-0 scale-0 text-white transition-all ease-in ease-out rounded group-hover:scale-100">
+                            <span class="absolute text-base top-2 md:top-3 right-0 pr-3 md:pr-5">Vectors</span>
+                            <span class="absolute w-full bottom-2 md:bottom-3 px-3 md:px-5">
+                                <div class="flex flex-col w-full">
+                                    <div class="text-base text-white">
+                                        Free vectors border blue
+                                    </div>
+                                    <div class="flex items-center">
+                                        <img src="/assets/images/avatar.png"
+                                            class="rounded-full h-12 w-12 border border-sky-300" alt="" />
+                                        <p class="text-white text-sm font-light ml-2">Freecraftstock</p>
+
+                                        <div class="flex w-full justify-end">
+                                            <span class="text-base bi bi-heart-fill items-end shrink text-white">
+                                                <span class="">10</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                        <a href="detail.html" class="inset-0 absolute z-10"></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="md:hidden fixed z-50 bottom-0 right-0 flex w-full py-3 bg-blue-600 justify-between px-10 text-slate-50 text-lg rounded-t-lg">
-        <a href="" class="bi bi-house"></a>
-        <a href="" class="bi bi-tags"></a>
-        <a href="" class="bi bi-heart"></a>
-        <a href="" class="bi bi-download"></a>
-        <a href="" class="bi bi-person-circle"></a>
-    </div>
-    <!-- END: Content -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
 </body>
 
